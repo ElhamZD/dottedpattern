@@ -1,0 +1,29 @@
+.QOverlay {
+	background-color: #000000;
+	z-index: 9999;
+	padding-left:450px;
+	padding-top:150px;
+}
+.Qubackimage{
+	background:url(images/loaderPrevious.png) no-repeat;
+	height: 310px;
+	}
+.QLoader {
+	
+	height: 310px;
+	width:20px;
+	position:relative;
+	/*background:#cccccc;*/
+	
+}
+.QLimage{
+	z-index:999;
+	position:absolute;
+	height: 310px;
+	width:500px;
+	background:url(images/loader.png) no-repeat;
+	
+	
+	
+	
+	}

@@ -1,0 +1,1783 @@
+/**** ALL FONT STYLES  ****/
+
+html {
+
+    font-family: sans-serif;
+
+    -ms-text-size-adjust: 100%;
+
+    -webkit-text-size-adjust: 100%;
+
+    height: 100%;
+
+}
+
+body {
+
+    margin: 0;
+
+    font-family: 'montserrat-hairline-webfont', sans-serif;
+
+    width: 100%;
+
+    font-size: 180%;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  background-size: 3px 3px;
+"
+
+
+}
+
+@font-face {
+
+    font-family: 'montserrat-hairline-webfont';
+
+    src: url('../fonts/montserrat-hairline-webfont.eot');
+
+    src: url('../fonts/montserrat-hairline-webfont.eot') format('embedded-opentype'), url('../fonts/montserrat-hairline-webfont.woff') format('woff'), url('../fonts/montserrat-hairline-webfont.ttf') format('truetype'), url('../fonts/montserrat-hairline-webfont.svg#montserrat-hairline-webfont') format('svg');
+
+}
+
+@font-face {
+
+    font-family: 'montserrat-light-webfont';
+
+    src: url('../fonts/montserrat-light-webfont.eot');
+
+    src: url('../fonts/montserrat-light-webfont.eot') format('embedded-opentype'), url('../fonts/montserrat-light-webfont.woff') format('woff'), url('../fonts/montserrat-light-webfont.ttf') format('truetype'), url('../fonts/montserrat-hairline-webfont.svg#montserrat-light-webfont') format('svg');
+
+}
+
+@font-face {
+
+    font-family: 'montserrat-bold-webfont';
+
+    src: url('../fonts/montserrat-bold-webfont.eot');
+
+    src: url('../fonts/montserrat-bold-webfont.eot') format('embedded-opentype'), url('../fonts/montserrat-bold-webfont.woff') format('woff'), url('../fonts/montserrat-bold-webfont.ttf') format('truetype'), url('../fonts/montserrat-bold-webfont.svg#montserrat-bold-webfont') format('svg');
+
+}
+
+
+
+@font-face {
+
+    font-family: 'opensans-bold';
+
+    src: url('../fonts/opensans-bold.eot');
+
+    src: url('../fonts/opensans-bold.eot') format('embedded-opentype'), url('../fonts/opensans-bold.woff') format('woff'), url('../fonts/opensans-bold.ttf') format('truetype'), url('../fonts/opensans-bold.svg#opensans-bold') format('svg');
+
+}
+
+@font-face {
+
+    font-family: 'montserrat-regular-webfont';
+
+    src: url('../fonts/montserrat-regular-webfont.eot');
+
+    src: url('../fonts/montserrat-regular-webfont.eot') format('embedded-opentype'), url('../fonts/montserrat-regular-webfont.woff') format('woff'), url('../fonts/montserrat-regular-webfont.ttf') format('truetype'), url('../fonts/montserrat-regular-webfont.svg#montserrat-regular-webfont') format('svg');
+
+}
+
+
+
+a:focus{
+
+    outline: none;
+
+}
+
+
+
+/***** ALL SITE FONT SIZE START*****/
+
+
+
+/*HOMEPAGE CSS*/
+
+
+/*====================== edit Css ====================*/
+
+
+
+.header_ul li{
+
+    font-family:montserrat-light-webfont;
+
+    color: #CCCCCC;
+
+    padding: 10px;
+
+    float: left;
+
+}
+/*section.custom_clients#clients{
+    background: white;
+}*/
+
+section#clients p{
+
+    font-family: 'montserrat-light-webfont';
+
+    font-size: 18px;
+    color:black;
+
+}
+
+#clients.custom_clients .title_description{
+
+    font-size:30px; 
+
+    line-height: 110%;
+
+}
+
+#clients.custom_clients .title_description2 a{
+
+    color: #ff6200;
+
+}
+
+#clients.custom_clients .title_description3{
+
+    font-size:28px;
+    color:#FFAB31;
+
+}
+
+.our_process .title_description{
+
+    font-size:30px; 
+
+    line-height: 110%;
+
+}
+
+.language_switcher{ 
+
+    font-family: "montserrat-light-webfont";
+
+}
+
+/*FOOTER CSS*/
+
+.address_line h4{
+
+    font-family: 'montserrat-light-webfont';
+
+    font-size: 17px;
+
+}
+
+.footerli{
+
+    font-family: "montserrat-light-webfont";
+
+    font-size: 15px;
+
+}
+
+.footer p{
+
+    font-size: 75%;
+
+    font-family: 'montserrat-light-webfont';
+
+    font-weight: 500;
+
+}
+
+/*WORKPAGE CSS*/
+
+.case-study .content p{
+
+    font-family: 'montserrat-light-webfont';
+
+    font-size: 18px;
+    color:black;
+
+}
+.case-study .content p.white{
+    color:white;
+}
+
+.case-study .project_bg .title_description{
+
+    font-size:25px; 
+
+    line-height: 110%;
+
+}
+
+.case-study .project_bg .title_description1{
+
+    font-size:20px; 
+
+    line-height: 110%;
+
+}
+
+.case-study .project_bg .title_description2{
+
+    font-size:25px; 
+
+    line-height: 130%;
+
+}
+
+/*SERVICES PAGE CSS*/
+/*#services{
+    background:white;
+}*/
+#services .service-tabs .nav-tabs li a{
+
+    font-family: 'montserrat-light-webfont';
+
+    font-size: 18px;
+
+}
+
+#services .service-tabs .nav-tabs li.active a{
+
+    font-family: 'montserrat-light-webfont';
+
+}
+
+#services .service-tabs .service .description h1{
+
+    font-family: 'montserrat-bold-webfont';
+
+    font-size: 250%;
+    color:#FF6801;
+
+}
+
+#services .service-tabs .service .description p{
+
+    font-family: 'montserrat-light-webfont';
+    font-size: 18px;
+    color:black;
+
+}
+
+.latest-work-bar h1{
+
+    font-size: 121%;
+    color:black;
+    font-family: 'montserrat-regular-webfont';
+
+}
+
+/*ContactPage CSS*/
+
+#contact section .contact-details p{
+
+    font-family: 'montserrat-light-webfont';
+    color:black;
+    font-size: 18px;
+
+}
+#contact section .contact-details p span{
+    color:#FF6801;
+}
+#contact .small-text{
+
+    font-family: 'montserrat-light-webfont';
+
+    font-size: 70%;
+
+}
+
+.form-group .form-control {
+
+    font-family: 'montserrat-bold-webfont';
+
+}
+
+#contact section h1{
+
+    font-size: 200%;
+
+    font-family: 'montserrat-bold-webfont';
+
+}
+
+/*PEOPLE PAGE CSS*/
+
+#people section p{
+
+    font-family: 'montserrat-light-webfont';
+    color:black;
+    font-size: 18px;
+
+}
+
+#people .custom_team .title_description{
+
+    font-size:30px; 
+    color:black;
+    line-height: 110%;
+
+}
+
+#people .custom_team .title_description1{
+
+    font-size:30px; 
+
+}
+
+#people .custom_team .title_description2{
+
+    font-size: 28px; 
+
+}
+
+#people .custom_office .title_description{
+
+    font-size:30px; 
+
+    line-height: 110%;
+
+}
+
+#people .custom_office .title_description1{
+
+    font-size:28px; 
+    color:#FFAB31;
+
+}
+#people .custom_team .title_description2{
+    color:#FFAB31;
+}
+
+/*PAYMENT CSS*/
+
+.case-study .content p.h1{
+
+    font-size: 36px;
+
+}
+
+.case-study .content p.h2{
+
+    font-size: 30px;
+
+}
+
+.case-study .content p.h3{
+
+    font-size: 24px;
+
+}
+
+.case-study .content p.h4{
+
+    font-size: 18px;
+
+}
+
+/*TERMS PAGE CSS*/
+
+.terms_outer .terms_inner .terms-content{
+
+    font-family: 'montserrat-light-webfont';
+
+}
+
+.terms_outer .terms_inner .terms-content p{
+
+    font-family: 'montserrat-light-webfont';
+
+    font-size: 18px;
+
+}
+
+.terms_outer .terms_inner .terms-content p.h1{
+
+    font-size: 36px;
+
+}
+
+.terms_outer .terms_inner .terms-content p.h2{
+
+    font-size: 30px;
+
+}
+
+.terms_outer .terms_inner .terms-content p.h3{
+
+    font-size: 24px;
+
+}
+
+.terms_outer .terms_inner .terms-content p.h4{
+
+    font-size: 18px;
+
+}
+
+/*OUTSOURCING PAGE CSS*/
+
+#main .outsourcing_outer .outsourcing_tab .outsourcing_content .description h1{
+
+    font-family: 'montserrat-bold-webfont';
+
+    font-size: 250%;
+
+}
+
+#main .outsourcing_outer .outsourcing_tab .outsourcing_content .description p {
+
+    font-family: 'montserrat-light-webfont';
+
+    font-size: 18px;
+
+}
+
+
+/*WEBSHOP PAGE CSS*/
+
+#whattodo{
+	padding-top: 50px;
+	background: #262626 !important;
+}
+#whattodo .description h1 {
+    font-family: 'montserrat-bold-webfont';
+    font-size: 250%;
+}
+#whattodo .description h3 {
+    font-family: 'montserrat-regular-webfont';
+    font-size: 150%;
+}
+#whattodo .description p {
+    font-family: 'montserrat-light-webfont';
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6em;
+    text-align: center;
+}
+#whattodo .myrow{
+    margin: 30px 0;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+#whattodo .myrow a.reamoremoney {
+    font-family: 'montserrat-light-webfont';
+    font-size: 18px;
+    line-height: 1.6em;
+    color: #fff;
+    margin: 20px 0;
+}
+.readmymore.btn.btn-default {
+	font-family: 'montserrat-light-webfont';
+    background: #f05023;
+    line-height: 45px;
+    padding: 0 20px;
+    color:#fff;
+    margin: 0 10px 30px;
+}
+#whattodo .container {
+    width: 100%;
+}
+#whattodo .col-sm-4 {
+    width: 30%;
+    margin: 0 21px;
+}
+#whattodo .myrow {
+    margin: 0 0 30px;
+}
+.language_switcher {
+    width: 110px;}
+
+    /*=================  End ========================*/
+
+
+
+    @media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+
+        #whattodo .col-sm-4 {
+            width: 33% !important;
+            margin: 0; float: left;
+        }
+    }
+
+    @media screen and (min-device-width: 769px) and (max-device-width: 1024px) { 
+
+        #whattodo .col-sm-4 {
+            width: 33% !important;
+            margin: 0; float: left;
+        }
+    }
+
+    @media screen and (min-device-width: 1025px) and (max-device-width: 1250px) { 
+
+        #whattodo .col-sm-4 {
+            width: 33% !important;
+            margin: 0; float: left;
+        }
+    }
+
+    @media (min-width: 850px) and (max-width: 1340px) {
+
+     #whattodo .col-sm-4 { width: 31%; margin: 0 12px; } 
+
+ }
+
+
+ /***------ RESPONSIVE CSS -----***/
+
+ @media (max-width: 1200px){
+
+    body{
+
+        font-size: 120%;
+
+        line-height: 1.42857143;
+
+    }
+
+    /*HOME PAGE CSS*/
+
+    section#clients p{
+
+        font-size: 12px;
+
+    }
+
+    #clients.custom_clients .title_description{
+
+        font-size:20px;
+
+    }
+
+    #clients.custom_clients .title_description3{
+
+        font-size:20px;
+
+    }
+
+    /*PAYMENT CSS*/
+
+    .case-study .content p.h1{
+
+        font-size: 25px;
+
+    }
+
+    .case-study .content p.h2{
+
+        font-size: 20px;
+
+    }
+
+    .case-study .content p.h3{
+
+        font-size: 15px;
+
+    }
+
+    .case-study .content p.h4{
+
+        font-size: 15px;
+
+    }
+
+    /*PEOPLE PAGE CSS*/
+
+    #people .custom_team .title_description{
+
+        font-size:20px;
+        color:black; 
+
+    }
+
+    #people .custom_team .title_description1{
+
+        font-size:20px; 
+
+    }
+
+    #people .custom_team .title_description2{
+
+        font-size: 15px; 
+
+    }
+
+    #people .custom_office .title_description{
+
+        font-size:20px; 
+
+    }
+
+    #people .custom_office .title_description1{
+
+        font-size:15px; 
+
+    }
+
+    /*TERMS CSS*/
+
+    .terms_outer .terms_inner .terms-content p{
+
+        font-size: 18px;
+
+    }
+
+    .terms_outer .terms_inner .terms-content p.h1{
+
+        font-size: 25px;
+
+    }
+
+    .terms_outer .terms_inner .terms-content p.h2{
+
+        font-size: 25px;
+
+    }
+
+    .terms_outer .terms_inner .terms-content p.h3{
+
+        font-size: 20px;
+
+    }
+
+    .terms_outer .terms_inner .terms-content p.h4{
+
+        font-size: 15px;
+
+    }
+
+    /*WORKPAGE CSS*/
+
+    .case-study .content p{
+
+        font-size: 18px;
+
+    }
+
+    .case-study .project_bg .title_description{
+
+        font-size:15px;
+
+    }
+
+    .case-study .project_bg .title_description1{
+
+        font-size:15px;
+
+    }
+
+    .case-study .project_bg .title_description2{
+
+        font-size:15px;
+
+    }
+
+    /*FOOTER CSS*/
+
+    .footerli{
+
+        font-size: 12px;
+
+    }
+
+    /*WORK PAGE CSS*/
+
+    .case-study .content p{
+
+        font-size: 12px;
+
+    }
+
+    .case-study section.hero p{
+
+        font-size: 12px;
+
+    }
+
+    /*SERVICES PAGE CSS*/
+
+    section#showcase .col-xs-12 .latest-work-bar{
+        background:#efefef;
+    }
+    #services .service-tabs .nav-tabs li a{
+
+        font-size: 12px;
+
+    }
+    .latest-work-bar a{
+        background-color:#efefef
+    }
+
+    #services .service-tabs .service .description p{
+
+        font-size: 12px;
+
+    }
+
+
+    /*PEOPLE PAGE CSS*/
+
+    #people section p {
+
+        font-size: 12px;
+        color:black;
+
+    }
+
+    /*CONTACT PAGE CSS*/
+
+    #contact section .contact-details p{
+
+        font-size: 12px;
+
+    }
+
+    /*OUTSOURCING PAGE CSS*/
+
+    #main .outsourcing_outer .outsourcing_tab .outsourcing_content .description p {
+
+        font-size: 12px;
+
+    }
+
+    /*TERMS PAGE CSS*/
+
+    .terms_outer .terms_inner .terms-content p{
+
+        font-size: 12px;
+
+    }
+
+    /*WEBSHOP PAGE CSS*/
+
+    #whattodo .description h1 {
+    	font-size: 30px;
+    }
+    #whattodo .description h3 {
+        font-size: 130%;
+    }
+    #whattodo .description p {
+        font-size: 12px;
+    }
+
+    #whattodo .myrow a.reamoremoney {
+        font-size: 18px;
+    }
+    .readmymore.btn.btn-default {
+     font-size: 12px;
+ }
+
+ #whattodo .col-sm-4 {
+    width: 100%;
+    margin: 0;
+}  
+#whattodo .description p {
+	margin-bottom: 0px;
+}
+}
+
+
+
+
+
+
+
+
+
+/***** ALL SITE FONT SIZE END *****/
+
+
+
+
+
+/*** HOME PAGE CSS ***/
+
+
+
+.relative_scroll{
+
+    position:relative; 
+
+    width:90%; 
+
+    overflow:hidden;
+
+}
+
+#clients.custom_clients{
+
+    padding-bottom:0px;
+
+}
+
+.custom_switcher .en_switcher{
+
+    color: #fff;
+
+}
+
+.custom_switcher .nl_switcher{
+
+    cursor: pointer;
+
+    /*color:#CCCCCC;*/
+    color:black;
+
+    text-decoration: none;
+
+}
+
+.custom_switcher .vertical_line{
+
+    /*color:#CCCCCC;*/
+    color:black;
+
+}
+
+.custom_contact .custom_select{
+
+    border: 0px none !important;
+
+    text-indent: 0.01px;
+
+    -moz-appearance: none;
+
+    -webkit-appearance:none;
+    /*background: white;*/
+    color:#ccc;
+
+}
+
+.contact-details .a-tag{
+
+    color: white;
+
+}
+
+.contact-details .contact-country{
+
+    font-size:20px; 
+
+    font-weight: bold;
+
+} 
+
+.a{
+
+    overflow-x: hidden;
+    width:100%;
+
+}
+
+.b{
+
+    margin-left: -15px;
+
+    margin-right: -15px;
+
+}
+
+.homepage_logo .homepage_logo_images
+
+{
+
+	display: none;
+
+}
+
+.mobile_logo{
+
+    display: none;
+
+    margin: 40px 15px 50px;
+
+}
+
+.mobile_logo img {
+
+    max-width:  100%;
+
+}
+
+
+
+
+
+/*** HEADER CSS ***/
+
+#header{
+    display:none;
+    height:60px;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 100;
+    background:#f3f3f3;
+}
+
+.header_ul li span{
+    color: #cccccc; 
+    margin-right: 60px;
+}
+
+.header_ul li span i{
+
+    /*color: #cccccc;*/
+    color:black; 
+
+}
+
+.header {
+
+    width: 990px;
+
+    margin: 0 auto;
+    background: #efefef
+
+}
+.mobile_header{
+
+    display: none;
+
+    width:  100%;
+
+    position:  fixed;
+
+    top: 0;
+
+    left:  0;
+
+    right:  0;
+
+    width:  100%;
+
+    height: 60px;
+
+    z-index: 1;
+
+}
+
+.callbackbtn
+
+{
+
+    display: none;
+
+    position: fixed;
+
+    bottom: 70px;
+
+    z-index: 10;
+
+    right: 15px;
+
+}
+
+.callbackbtn i {
+
+    color: #fff !important;
+
+    font-size: 40px;
+
+    background: #ff6200;
+
+    padding: 5px 8px 2px;
+
+    border-radius: 6px;
+
+}
+
+
+
+.loaded.scroll{
+
+    overflow: hidden !important;
+
+}
+
+.custom_header .header_ul{
+
+	list-style: none;
+
+    font-size: 15px;
+
+    padding: 11px;
+
+    float: left;
+
+    display: inline-block;
+
+    color: #ccc;
+
+}
+
+.custom_header .header_ul li{
+
+    color: #ccc;
+
+}
+.custom_header .header_ul li span{
+    color:black;
+}
+
+.custom_header .header_ul a{
+    color: #ccc;
+}
+
+.custom_header .logo_center {
+
+    float:  left;
+
+    padding: 10px;
+
+    text-align: center;
+
+    width: 100%;
+
+    position:  absolute;
+
+    top: 0;
+
+    left:  0;
+
+}
+
+.custom_header .logo_center img{
+
+    cursor: pointer;
+
+    width: 175px;
+
+}
+
+
+
+
+
+.hamburger .hamburger__icon
+
+{
+
+	margin-top: 17px;
+
+}
+
+.hamburger .hamburger__icon:before {
+
+    top: -9px;
+
+}
+
+.hamburger .hamburger__icon:after {
+
+    top: 9px;
+
+    bottom: 9px;
+
+}
+
+
+
+.home_services{
+
+    margin-left: -15px;
+
+    margin-right: -15px;
+
+}
+
+
+
+
+
+
+
+/**** CONTACT PAGE CSS ****/
+
+.contact-page .QOverlay
+
+{
+
+    display: none;
+
+}
+
+
+
+.mapboxgl-popup 
+
+{
+
+    max-width: 300px;
+
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+}
+
+.mapboxgl-popup-close-button
+
+{
+
+    color: black;
+
+}
+
+.mapboxgl-popup-content strong 
+
+{
+
+    color: black;
+
+}
+
+.mapboxgl-popup-content p {
+
+    font-size: 12px;
+
+    color: black;
+
+    font-weight: 400;
+
+    max-height: 300px;
+
+    overflow: auto;
+
+    min-width:  280px;
+
+    margin-top: 5px;
+
+}
+
+
+
+.contact_map{
+
+    position: relative;
+
+}
+
+.contact_map .mapboxgl-popup{
+
+    top: -50px;
+
+}
+
+#contact .contact_map #map { 
+
+    position:absolute; 
+
+    top:0; 
+
+    bottom:0; 
+
+    width:100%; 
+
+    height: 500px;
+
+}
+
+
+
+/**** SERVICES PAGE CSS ****/
+
+
+
+
+
+.tg-icon-2 {
+
+    display:inline-block;
+
+    width:50px;
+
+    height:60px;
+
+    background:url(../images/icon-sprite.png) 0 0 no-repeat transparent;
+
+}
+
+.footerdiv{
+
+    cursor: default;
+
+}
+
+.footerli span
+
+{
+
+    cursor: pointer;
+
+}
+#menu_outer ul{
+    background:#efefef;
+}
+
+#menu_outer ul li span{
+    cursor: pointer;
+    font-weight: 700;
+    color:black;
+}
+#menu_outer ul li:hover{
+    background:none;
+}
+#menu_outer ul li span:hover{
+    color:#FF6801;
+}
+
+#showcase .col-sm-4.no-gutter {
+
+    line-height: 0;
+
+}
+
+.fat-nav li a{
+
+    font-weight: 700;
+
+}
+
+
+
+@media screen and (max-width: 1620px) and (min-width: 1366px)  {
+
+    section#landing canvas{
+
+        /*min-height: 687px;
+
+        min-height: 800px!important;
+
+        padding-bottom: 30px;*/
+
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1199px) {
+
+	
+    .custom_header {
+
+        width: 100%;
+
+    }
+
+    .custom_header .header_ul{
+
+        margin-left: 70px;
+
+        padding: 12px;
+
+    }
+
+    .language_switcher
+
+    {
+
+        font-size: 15px !important;
+
+        /*top: 1.5% !important;*/
+
+    }
+
+    .zopim
+
+    {
+
+        position: fixed !important;
+
+        top:unset !important;
+
+        bottom: 20px !important;
+
+        z-index: 10 !important;
+
+        width: auto;
+
+        height: auto;
+
+    }
+
+}
+
+@media only screen and (max-width: 1024px ) {
+
+	.mobile_logo {
+
+		display: block;
+		width: 68%;
+		margin: 0 auto;
+
+	}
+    .loaded.scroll{
+
+        position: fixed !important;
+
+    }
+
+    .relative_scroll .fat-nav__wrapper{
+
+        padding: 60px 0;
+
+        height: auto !important;
+
+    }
+
+    .relative_scroll .fat-nav {
+
+        padding: 60px 0;
+
+    }
+
+    .relative_scroll .social-links {
+
+        margin-top: 0% !important;
+
+        height: auto !important;
+
+    }
+
+    .relative_scroll .footer {
+
+        margin-top: 0% !important;
+
+        margin-bottom: 20px;
+
+        height: auto !important;
+
+    }
+
+    section#landing {
+
+        background-size: cover;
+
+        background-position: center;
+
+        /*height: auto !important;*/
+
+    }
+
+
+
+    /*.a{
+
+        position: relative;
+
+        min-height: 500px;
+
+        height: 100%;
+
+        height: calc(100% - 60px);
+
+        padding: 15px 0;
+
+        max-height: 800px;
+
+        }*/
+
+        .mobile_logo{
+
+            display: block;
+
+        }
+
+        .homepage_logo{
+
+            /*height: calc(100% - 60px);*/
+
+            display: none;
+
+        }
+
+        .case-study section.hero{
+
+            min-height: 380px;
+
+            max-height: 480px;
+
+            background-size: cover !important;
+
+            background-position: center !important;
+
+        }
+
+
+
+        section#clients .client-logo .logo-face{
+
+            max-height: 125px;
+
+            min-height: 125px;
+
+        }
+
+        .tab-pane .service .col-sm-5{
+
+            width: 50%;
+
+        }
+
+        #services .service-tabs .service .description h1{
+
+            font-size: 30px;
+            color:#ff6801;
+
+        }
+
+    }
+
+    @media only screen and (max-width: 979px) {
+
+   /* #services .service-tabs .service .col-sm-5 {
+
+        width:  100%;
+
+    }
+
+    #services .service-tabs .service .description{
+
+        padding: 0px 20px 50px;
+
+    }
+
+    #services .service-tabs .service .icon {
+
+        width: 250px;
+
+        margin: 0 auto;
+
+        }*/
+
+        .mobile_logo {
+
+          display: block;
+          width: 86%;
+          margin: 0 auto;
+
+      }
+
+      .d .social-links {
+
+        margin: 16px 0;
+
+    }
+
+    /*#services section.hero .emblem .nldiv img{
+
+        width: auto !important;
+
+        max-width: 100%;
+
+    }
+
+    #contact section.hero .emblem .nldiv img{
+
+        width: auto !important;
+
+        max-width: 100%;
+
+    }
+
+    #people section.hero .emblem .nldiv img{
+
+        width: auto !important;
+
+        max-width: 100%;
+
+        }*/
+
+    }
+
+    @media only screen and (max-width: 768px ) {
+
+
+        .mobile_logo {
+
+          display: block;
+          width: 89%;
+          margin: 0 auto;
+
+      }
+      /**** BASIC CSS ****/
+
+      .tab-pane .service .col-sm-5{
+
+        width: 100%;
+
+    }
+
+    .contact_map #map { 
+
+        height: 420px !important;
+
+    }
+
+    .contact_map .mapboxgl-popup{
+
+        max-width: 240px;
+
+    }
+
+
+
+    .mapboxgl-popup-content p{
+
+        min-width: 200px;
+
+    }
+
+    #menu_outer ul li{
+
+        font-size: 18px;
+
+        line-height: 1.5;
+
+        padding-top: 5px;
+
+        margin-bottom: 5px;
+
+    }
+
+    .relative_scroll .fat-nav__wrapper{
+
+        padding: 25px 0 30px;
+
+    }
+
+    .relative_scroll .footer{
+
+        padding: 0 15px;
+
+    }
+
+    /*#contact section h1{
+
+        font-size: 130%;
+
+        }*/
+
+
+
+        .callbackbtn
+
+        {
+
+            display: block;
+
+        }
+
+        .mobile_header
+
+        {
+
+            display: block;
+
+        }
+
+        .menu_logo img
+
+        {
+
+            padding: 15px;
+
+        }
+
+        .language_switcher
+
+        {  
+
+            padding: 15px 5px;
+
+            /*top: 1% !important;*/
+
+        }
+
+        section#landing{
+
+            background-size: cover !important;
+
+            background-position: center !important;
+
+            /*height: auto !important;*/
+
+        }
+
+        .case-study.packright section.hero .emblem .emblem-inner {
+
+            max-width: 597px;
+
+            min-width: 200px;
+
+            width: 280px;
+
+        }
+
+        .case-study.gallantoro section.hero .emblem .emblem-inner {
+
+            min-width: 200px;
+
+        }
+
+
+
+        /**** SERVICES CSS ****/
+
+
+
+        #services .service-tabs .service .description{
+
+            padding: 50px 20px;
+
+        }
+
+
+
+    /*.latest-work-bar h1{
+
+        font-size: 18px;
+
+    }
+
+    .case-study section.hero p{
+
+        font-size: 14px;
+
+        }*/
+
+    /*
+
+    .case-study section.hero .emblem .emblem-inner{
+
+        min-width: 220px !important;
+
+        max-width: 220px !important;
+
+        width: 32%;
+
+    }
+
+    
+
+    .case-study .case-study-navbar{
+
+        background-color: rgba(0, 0, 0, .8);
+
+        }*/
+
+    }
+    @media screen and (max-width: 768px) and (orientation: landscape) {
+     .mobile_logo {
+
+      display: block;
+      width: 44%;
+      margin: 0 auto;
+
+  }
+
+}
+@media only screen and (max-width: 480px) {
+ #services .service-tabs .service .description h1{
+
+    font-size: 22px;
+
+}
+
+@media only screen and (max-width: 480px) {
+	#whattodo .description h1 {
+
+        font-size: 22px;
+
+    }
+
+    /*OUTSOURCING PAGE CSS*/
+
+    @media only screen and (max-width: 480px) {
+        #main .outsourcing_outer .outsourcing_tab .outsourcing_content .description h1{
+
+            font-size: 22px;
+
+        }
+
+        /*CONTACT PAGE CSS*/
+
+        @media only screen and (max-width: 480px) {
+            #contact section h1{
+
+                font-size: 22px;
+            }
+
+            .mobile_logo {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .contact_map #map { 
+
+                height: 340px !important;
+
+            }
+
+            .case-study.packright section.hero{
+
+                min-height: 380px;
+
+                background-size: cover !important;
+
+                background-position: center !important;
+
+            }
+
+        }
+
+        @media screen and (max-width: 480px) and (orientation: landscape) {
+         .mobile_logo {
+
+          display: block;
+          width: 44%;
+          margin: 0 auto;
+
+      }
+
+  }
+
+
+
+/*.homepage_logo canvas {
+
+    width: 100.15625vw !important;
+
+    height:  44.47916666666667vw !important;
+
+    }*/
+
+
+
+    section#landing {
+
+        display: flex;
+
+        align-items: center;
+
+    }
+
+
+
+    body.loaded.dark{
+        background:url(../images/pattern.jpg) repeat;
+    }
+    /*.row{
+        background:white;
+    }
+    .meshim_widget_components_chatButton_Button:hover{
+        background:white;
+    }*/

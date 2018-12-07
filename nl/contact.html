@@ -1,0 +1,1010 @@
+<!--[if !IE ]> <style>
+  #logo_image{display:none;}
+  <![endif]-->
+  <!DOCTYPE html>
+  <html class="no-js" lang="nl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   
+    <title>website laten maken | webshop laten maken | website bouwen</title>
+    <meta name="description" content="Voor topkwaliteit webdesign Nederland kunt u terecht bij ons webdesign bureau. Een website maken door professionele webdeveloper Amsterdam is zo gebeurd.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+     <meta name="keywords" content="Webdevelopment amsterdam,webdeveloper Amsterdam,webontwikkelaar,applicatie ontwikkelaar,applicatie ontwikkelaar,Goedkope website laten maken,webontwerper,ontwerpbureau amsterdam,webdesign Eindhoven,webdesign Nijmegen,Webdesign Den Haag,site maken">
+
+    <style>
+    select option{
+      text-align:left !important;
+      padding-left:4px!important ;}</style>
+      <script type="text/javascript">
+      //userAgent in IE7 WinXP returns: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 2.0.50727)
+      //userAgent in IE11 Win7 returns: Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko
+
+      if (navigator.userAgent.indexOf('MSIE') != -1)
+      var detectIEregexp = /MSIE (\d+\.\d+);/ //test for MSIE x.x
+      else // if no "MSIE" string in userAgent
+      var detectIEregexp = /Trident.*rv[ :]*(\d+\.\d+)/ //test for rv:x.x or rv x.x where Trident string exists
+
+      if (detectIEregexp.test(navigator.userAgent)){ //if some form of IE
+        var ieversion=new Number(RegExp.$1) // capture x.x portion and store as a number
+
+        if (ieversion>=12)
+        document.write("You're using IE12 or above")
+        else if (ieversion>=11) {
+          var cssId = 'myCss11';  // you could encode the css path itself to generate id..
+          if (!document.getElementById(cssId))
+          {
+            var head  = document.getElementsByTagName('head')[0];
+            var link  = document.createElement('link');
+            link.id   = cssId;
+            link.rel  = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/styleie11.css';
+            link.media = 'all';
+            head.appendChild(link);
+          }
+          $(".viewport").click(function() {
+            window.location ="index.html";
+            return false;
+          });
+        }
+        else if (ieversion>=10)
+        document.write("You're using IE10 or above")
+        //else if (ieversion>=9)
+        //document.write("You're using IE9 or above")
+        //else if (ieversion>=8)
+        //document.write("You're using IE8 or above")
+        //else if (ieversion>=7)
+        //document.write("You're using IE7.x")
+        //else if (ieversion>=6)
+        // document.write("You're using IE6.x")
+        //else if (ieversion>=5)
+        //document.write("You're using IE5.x")
+      }
+      else{
+        //alert("n/a");
+      }
+      </script>
+      <script>
+      var mq = window.matchMedia( "(min-width: 500px)" );
+
+      if (mq.matches) {
+        window.onload = function() {
+          $('#logo_image').css('display','none');
+          $('#logo_image').hide().fadeIn(8000);
+        };
+      }</script>
+      <link rel="stylesheet" href="queryLoader.css" type="text/css">
+      <!-- <link rel="stylesheet" href="animate.css" type="text/css"> -->
+      <link type="images/favicon" href="images/favicon.ico" rel="shortcut icon" />
+      <link rel="stylesheet" href="css/font-awesome.min.css" media="all">
+      <!--[if  IE]>
+      <link rel="stylesheet" href="css/stylesie.css" media="all" type="text/css">
+      <![endif]-->
+      <link rel="stylesheet" href="css/styles.css" media="all">
+      <!-- <link rel="stylesheet" href="css/mapbox.css" type="text/css"> -->
+      <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+      <link rel="stylesheet" href="css/bootstrap-select.css">
+      <link rel="stylesheet" href="css/custom.css" media="all" type="text/css">
+      
+      <!-- <script type="text/javascript" src="js/scripts.js"></script> -->
+      <link rel="stylesheet" href="css/jquery.fatNav.min.css">
+      <!-- <script src="js/bootstrap-select.js"></script> -->
+
+      <!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    --> <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  -->
+  <script type="text/javascript" src="queryLoader.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet'>
+
+
+  <!-- <script src='js/mapbox-gl.js'></script> -->
+  <!-- <link href='css/mapbox-gl.css' rel='stylesheet' > -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery-validation-demo/jquery.validate.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="jquery-validation-demo/validation-jquery.css">
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  <script type="text/javascript">
+  function send_contact_email()
+  {
+    //alert("dddd");return false;
+    var fname = document.getElementById('name').value;
+    var require_service = document.getElementById('require_service').value;
+    var email = document.getElementById('email').value;
+    var telephone = document.getElementById('telephone').value;
+    var company = document.getElementById('company').value;
+    var budget = document.getElementById('budget').value;
+    var deadline = document.getElementById('deadline').value;
+    var message = document.getElementById('message').value;
+    //alert(fname);
+    $.ajax({
+      type: "GET",
+      url: "send_contact_email.php?fname="+fname+"&require_service="+require_service+"&email="+email+"&telephone="+telephone+"&company="+company+"&budget="+budget+"&deadline="+deadline+"&message="+message,
+      async : false,
+      dataType:'json',
+      data: "",
+      cache: false,
+      success: function(html)
+      {
+
+        document.getElementById("require_service").value='';
+        document.getElementById("name").value='';
+        document.getElementById("email").value='';
+        document.getElementById("telephone").value='';
+        document.getElementById("company").value='';
+        document.getElementById("message").value='';
+        document.getElementById("deadline").value='';
+        document.getElementById("budget").value='';
+        $(".alerts").fadeIn(1000);
+        $(".alerts").fadeOut(8000);
+        if(html.status == "success")
+        {
+          setTimeout(function(){
+            go_on('hartelijk_dank.html')
+          },2000);
+        }
+
+      }
+    })
+
+  }
+  </script>
+  <script type="text/javascript">
+
+  (function($,W,D)
+  {
+    var JQUERY4U = {};
+
+    JQUERY4U.UTIL =
+    {
+      setupFormValidation: function()
+      {
+
+        $("#contactForm").validate({
+          rules: {
+
+            require_service: {
+              required: true,
+
+            },
+            name: {
+              required: true,
+            },
+            email: {
+              required: true,
+
+            },
+            telephone: {
+              required: false,
+              number:true,
+
+            },
+            company: {
+              required: false,
+
+            },
+
+            budget: {
+              required: true,
+
+            },
+            deadline: {
+              required: true,
+
+            },
+            message: {
+              required: true,
+
+            },
+
+
+          },
+
+          messages: {
+
+            require_service: {
+              required: "Vul vereiste dienst"
+
+            },
+            name: {
+              required: "Vul uw naam"
+            },
+            email: {
+              required: "Vul uw e-mail"
+            },
+            telephone: {
+              required: "Vul uw telefoon"
+            },
+            company: {
+              required: "Vul uw company"
+            }
+            ,
+            budget: {
+              required: "Vul uw budget"
+            } ,
+
+            deadline: {
+              required: "Vul uw deadline"
+            },
+            message: {
+              required: "schrijf uw bericht"
+            }
+
+
+          },
+          submitHandler: function(form) {
+            //alert("dddd");
+            send_contact_email();
+            //form.submit();
+          }
+        });
+      }
+    }
+
+    //when the dom has loaded setup form validation rules
+    $(D).ready(function($) {
+      JQUERY4U.UTIL.setupFormValidation();
+    });
+
+  })(jQuery, window, document);
+
+
+
+  </script>
+  <script type="text/javascript" async src="js/ga.js"></script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+  function trackExternal(link, prefix) {
+    try {
+      if (typeof prefix == "undefined" || prefix == null)
+      prefix = "";
+      var href = link.href.replace(/(http)(s)?:\/\/(www\.)?/i, "/outgoing/" + prefix);
+      _gaq.push(['_trackPageview', href]);
+    } catch (err) {}
+  }
+  </script>
+  <script type="text/javascript" src="js/modernizr-2.5.3.js"></script>
+  <script type="text/javascript">
+  window.MetroJsVersion = '0.9.77';
+  </script>
+  <script type="text/javascript" async src="js/embed.js"></script>
+  <style>
+  </style>
+
+  <div id="header">
+      <div class="header custom_header" data-position="fixed" >
+        <style>
+          .clicked{ 
+            color: #F05023 !important;
+          }
+          [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide:not(.ng-hide-animate){
+            display: none !important;
+          }
+        </style>
+        <ul class="header_ul">
+          <li>
+            <span>
+              <i class="fa fa-phone-square"></i> 06 4410 1988
+            </span>
+          </li>
+      </ul>
+      <div class="logo_center">
+          <span onClick="go_on('/nl')">
+            <img src="images/top_logo_sticky.png" alt="top-logo-sticky">
+          </span>
+      </div>
+    </div>
+  </div>
+  <div class="callbackbtn">
+      <a href="tel:+31 6 4410 1988"><i class="fa fa-phone"></i></a>
+  </div>
+  <div class="mobile_header">  
+  </div>
+
+<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?4ntf2UzC0P663qAShvC1UWapjtIAUkpl";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zendesk Chat Script-->
+
+<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-72356531-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+</head>
+
+<body class="loaded contact-page" data-ng-app="teamgeek" data-ng-class="{ loaded: appLoaded }" data-ng-strict-di="">
+
+  <div class="relative_scroll" onscroll="myFunction()">
+
+    <script>
+
+
+    /*@cc_on
+    if (/^10/.test(@_jscript_version) || ieversion>=10) {
+    var cssId = 'myCss10';  // you could encode the css path itself to generate id..
+    if (!document.getElementById(cssId))
+    {
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.id   = cssId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'css/styleie10.css';
+    link.media = 'all';
+    head.appendChild(link);
+  }
+}
+@*/
+
+//  var browserName=navigator.appName;
+//if (browserName !="Microsoft Internet Explorer" || !(/^10/.test(@_jscript_version)) || !(ie11))
+//{}
+QueryLoader.selectorPreload = "body";
+QueryLoader.init();
+$('.QOverlay').css('visibility','hidden');
+var mq = window.matchMedia( "(min-width: 500px)" );
+if (!mq.matches) {
+  $('.QOverlay').css('visibility','hidden');
+}
+</script>
+
+
+<div class="fat-nav" >
+  <div class="fat-nav__wrapper" id="menu_outer">
+    <ul>
+      <!--<li style="background:none;"><a href="index.html"><img src="images/top_logo.png" alt="top-logo"></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="blog">Blog</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="contactus.html">Contact</a></li>-->
+      <li style="background:none;">
+          <span onClick="go_on('index.html')">
+              <img src="images/top_logo.png" alt="top-logo">
+          </span>
+      </li>
+      <li><span onClick="go_on('index.html')">HOME</span></li>
+      <li><span onClick="go_on('werk.html')">WERK</span></li>
+      <li><span onClick="go_on('diensten.html')">DIENSTEN</span></li>
+    <!--  <li><span onClick="go_on('blog')">BLOG</span></li> -->
+      <li><span onClick="go_on('bureau.html')">BUREAU</span></li>
+      <li><span onClick="go_on('contact.html')">CONTACT</span></li>
+    </ul>
+  </div>
+  <div class="social-links">
+    <div class="all_social_links">
+      <a class="social-link facebook" target="_blank" href="https://www.facebook.com/BigLyft"></a>
+      <!--  <a class="social-link gplus" target="_blank" href="https://google.com/+Ekubus"></a> -->
+      <a class="social-link twitter" target="_blank" href="https://twitter.com/BigLyft"></a>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2018 BIGLYFT | KvK Amsterdam - 61529761</p>
+  </div>
+</div>
+
+
+
+</div>
+<header></header>
+<div id="main">
+  <div id="contact" data-tg-navbar-container="">
+    <aside>
+      <div data-is-collapsed="true"  data-ng-class="{ 'collapsed': collapsed }">
+      </div>
+    </aside>
+
+    <div id="resizable-container">
+      <section class="hero">
+        <div class="emblem">
+          <!-- <div class="viewport_top_logo">
+          <a href="./"><img src="images/logo_anitop.png" alt="logo-anitop" id="logo_image" class="animated"></a>
+        </div> -->
+        <div class="nldiv">
+          <div class="viewport" id="myport">
+            <img src="images/contact_img.png"  alt="contact">
+            <!-- <img class="image"/>-->
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+    // document.getElementById('myport').addEventListener('click', function (){
+    //   window.location = '/';
+    // });
+    </script>
+
+    
+    <section>
+        <div class="container-fluid " data-ng-controller="ContactController">
+            <ul class="alerts" style="display:none;" data-ng-show="flashMessages.length > 0">
+                <li class="alert alert-success alert-dismissable" data-ng-repeat="message in flashMessages">
+                    <button class="close" data-ng-click="close($index)" aria-hidden="true" data-dismiss="alert" type="button">×</button>
+                    Message sent successfully.
+                </li>
+            </ul>
+            <form class="ng-pristine ng-invalid ng-invalid-required ng-valid-email drop-down-class custom_contact" id="contactForm" name="contactForm" novalidate>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h1>SCHRIJF ONS</h1>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group select_drop error_color" data-ng-class="{ 'has-error': contactForm.deadline.$dirty &amp;&amp; contactForm.deadline.$invalid }">
+                            <label class="control-label" for="required-service">Schrijf ons</label>
+                            <select class="show-tick form-control dropdown custom_select" id="require_service" name="require_service">
+                                <option class="centered" label="KIES DIENST*" value="">KIES DIENST*</option>
+                                <!-- <option class="centered" label="Strategy" value="Strategy">Strategy</option> -->
+                                <option class="centered" label="WEBDEVELOPMENT" value="WEBDEVELOPMENT">WEBDEVELOPMENT</option>
+								<option class="centered" label="WEBDESIGN" value="WEBDESIGN">WEBDESIGN</option>
+								<option class="centered" label="WEBSHOP / E-COMMERCE" value="WEBSHOP / E-COMMERCE">WEBSHOP / E-COMMERCE</option>
+                                <option class="centered" label="WEB APPS" value="WEB APPS">WEB APPS</option>
+                                <option class="centered" label="ANDEREN" value="ANDEREN">ANDEREN</option>
+                                <!-- <option class="centered" label="CMS" value="CMS">CMS</option> -->
+                                <!-- <option class="centered" label="UX / UI" value="UX/UI">UX / UI</option> -->
+								<!-- <option class="centered" label="BRANDING" value="BRANDING">BRANDING</option> -->
+                                <!--<option class="centered" label="CONSULTING" value="CONSULTING">Consulting</option> -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group required error_color" data-ng-class="{ 'has-error': contactForm.name.$dirty &amp;&amp; contactForm.name.$invalid }">
+                            <label class="control-label" for="name">NAAM</label>
+                            <input id="name" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" name="name" autocomplete="off" data-ng-model="data.name" required placeholder="NAAM*" type="text">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="form-group required error_color" data-ng-class="{ 'has-error': contactForm.email.$dirty &amp;&amp; contactForm.email.$invalid }">
+                            <label class="control-label" for="email">Email</label>
+                            <input autocomplete="off" id="email" class="form-control ng-pristine ng-untouched ng-valid-email ng-invalid ng-invalid-required" name="email" data-ng-model="data.email" required data-ng-model-options="{ debounce: 500 }" placeholder="EMAIL*" type="email">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="form-group error_color" data-ng-class="{ 'has-error': contactForm.telephone.$dirty &amp;&amp; contactForm.telephone.$invalid }">
+                            <label class="control-label" for="telephone">Telefoon</label>
+                            <input autocomplete="off" id="telephone" class="form-control ng-pristine ng-untouched ng-valid" name="telephone" data-ng-model="data.telephone" placeholder="TELEFOON" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group error_color" data-ng-class="{ 'has-error': contactForm.company.$dirty &amp;&amp; contactForm.company.$invalid }">
+                            <label class="control-label" for="company">BEDRIJF</label>
+                            <input autocomplete="off" id="company" class="form-control ng-pristine ng-untouched ng-valid" name="company" data-ng-model="data.company" placeholder="BEDRIJF" type="text">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group select_drop error_color" data-ng-class="{ 'has-error': contactForm.deadline.$dirty &amp;&amp; contactForm.deadline.$invalid }">
+                            <label class="control-label" for="BUDGET">BUDGET</label>
+                            <select class="show-tick form-control dropdown custom_select" id="budget" name="budget">
+                                <option class="centered" label="BUDGET*" value="">BUDGET*</option>
+								<option class="centered" label="< € 1500-" value="< € 1500-">< € 1500-</option>
+                                <option class="centered" label="€ 1500 to € 3000" value="€ 1500 to € 3000">€ 1500 to € 3000</option>
+                                <option class="centered" label="€ 3000 to € 5000" value="€ 3000 to € 5000">€ 3000 to € 5000</option>
+                                <option class="centered" label="€ 5000 to € 8000" value="€ 5000 to € 8000">€ 5000 to € 7000</option>
+                                <option class="centered" label="€ 8000 to € 10000" value="€ 8000 to € 10000">€ 5000 to € 7000</option>
+                                <option class="centered" label="> € 10000+" value="> € 10000+">> € 10000+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group select_drop error_color" data-ng-class="{ 'has-error': contactForm.deadline.$dirty &amp;&amp; contactForm.deadline.$invalid }">
+                            <label class="control-label" for="DEADLINE">DEADLINE</label>
+                            <select class=" show-tick form-control dropdown" id="deadline" name="deadline">
+                                <option class="centered" selected="selected" value="">DEADLINE*</option>
+                                <option class="centered" label="Minder dan 2 maanden" value="Minder dan 2 maanden">Minder dan 2 maanden</option>
+                                <option class="centered" label="Meer dan 2 maanden" value="Meer dan 2 maanden">Meer dan 2 maanden</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="form-group required error_color" data-ng-class="{ 'has-error': contactForm.message.$dirty &amp;&amp; contactForm.message.$invalid }">
+                            <label class="control-label" for="message">Vertel ons over uw project</label>
+                            <textarea id="message" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" name="message" data-ng-model="data.message" required placeholder="VERTEL ONS OVER UW PROJECT*"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+
+                        <button type="submit" class="btn btn-block btn-default" data-ng-class="{'btn-primary': contactForm.$valid, 'btn-default': contactForm.$invalid}" data-ng-click="send()" data-ng-disabled="processing || contactForm.$invalid">
+                            <span>Verstuur Bericht</span>
+                            <span class="ng-hide" data-ng-show="processing">&nbsp;<i class="fa fa-circle-o-notch fa-spin"></i></span>
+                        </button>
+
+                        <p class="small-text">Doorgaans reageren wij binnen 24 uur.</p>
+                    </div>
+                </div>
+            </form>
+
+            <div class="contact-details">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="detail">
+                                    <i class="tg-icon door-sign"></i>
+                                    <br>
+                                    <!--  <p>
+                                    Let's connect via Skype
+                                    <br>& get a quick & Free
+                                    <br>Quote for your project
+                                    <br>Our Skype ID is
+                                    <br><a style="color: #fff;" href="https://login.skype.com/login?message=signin_continue&client_id=360605&redirect_uri=https%3A%2F%2Fsecure.skype.com%2Fportal%2Flogin%3Freturn_url%3Dhttps%253A%252F%252Fsecure.skype.com%252Fportal%252Foverview" target="_blank">nl.biglyft</a><br>
+                                  </p> -->
+                                    <p>
+                                        U bent van harte welkom om te
+                                        <br>delen uw verhaal met ons over een
+                                        <br>kopje koffie of Skype ons op te nemen
+                                        <br>een gratis offerte voor uw project.
+                                        <br>Ons Skype-ID is <a class = "a-tag" href="https://login.skype.com/login?message=signin_continue&client_id=360605&redirect_uri=https%3A%2F%2Fsecure.skype.com%2Fportal%2Flogin%3Freturn_url%3Dhttps%253A%252F%252Fsecure.skype.com%252Fportal%252Foverview" target="_blank">hello.biglyft</a>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="detail">
+                                    <i class="tg-icon map"></i>
+                                    <br>
+                                    <p>
+                                        <span class = "contact-country">NETHERLANDS</span>
+                                        <br>BIGLYFT Web Services
+                                        <br>Herikerbergweg 292, 1101 CT,
+                                        <br>Amsterdam, The Netherlands.
+                                        <br>Phone: (020) 808 5470
+                                        <br>voor nieuw project: 06 4410 1988
+										<br>hello@biglyft.com	
+										<!-- <br><a class = "a-tag" href="mailto:hello@biglyft.com">hello@biglyft.com</a> -->
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="detail">
+                                    <i class="tg-icon freecost"></i>
+                                    <br>
+                                    <p>
+                                        <span class = "contact-country" >INDIA</span>
+                                        <br>BIGLYFT Web Services Pvt. Ltd.
+                                        <br>G-39, Ground Floor, DLF Center Point,
+                                        <br>Sector 11 C, Faridabad, Delhi/NCR, India.
+										<br>(+91) 991 144 9333 | hello@biglyft.in
+                                        <!-- <br>(+91) 991 144 9333 | <a class = "a-tag" href="mailto:hello@biglyft.in">hello@biglyft.in</a> -->
+                                    </p>
+                                    <!--<p>
+                            Meet us for a cup of coffee
+                            <br>at our office or at your place,
+                            <br>Just drop a mail at <br>
+                            <a style="color: #fff;" href="mailto:meetus@biglyft.com">meetus@biglyft.com</a>
+                          </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/webhawks.oadgmk27/attribution,zoompan,geocoder,share.html?access_token=pk.eyJ1Ijoid2ViaGF3a3MiLCJhIjoiY2lobjc0M3cxMG95enZma2xuZ2diYTRiaSJ9.neG1Xtm_RB1zyQ1q-9saiw#14/52.3829/4.8847'></iframe> -->
+
+    <div class="contact_map"><div id='map'></div></div>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYmlnbHlmdCIsImEiOiJjaXpxcjcxYWYwMDIyMndteWRxcjQzdmhyIn0.IoIqAxwTVstjqSSnQsNjIw'; 
+    // replace this with your access token
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/biglyft/cj2kfd07r001r2smvhp0u1jjo',
+      center: [4.942002, 52.307186 ],
+      zoom: 12
+    });
+    map.scrollZoom.disable();
+    // map.addControl(new mapboxgl.NavigationControl());
+    var nav = new mapboxgl.NavigationControl();
+    map.addControl(nav, 'top-left');
+
+
+    map.on('load', function () {
+      // Add a symbol layer.
+      map.loadImage('./images/marker.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('marker', image);
+      map.addLayer({
+          "id": "places",
+          "type": "symbol",
+          "fill-color": "#000000",
+          "source": {
+              "type": "geojson",
+              "data": {
+                  "type": "FeatureCollection",
+                  "features": [
+                      {
+                          "type": "Feature",
+                          "properties": {
+                            "description": "<strong>BIGLYFT</strong><p>Herikerbergweg 292, 1101 CT, Amsterdam, The Netherlands.</p>"
+                            // "icon": "marker"
+                          },
+                          "geometry": {
+                              "type": "Point",
+                              "coordinates": [
+                                  4.942002,
+                                  52.307186
+
+                              ]
+                          }
+                      }
+                  ]
+              }
+          },
+          "layout": {
+                "icon-image": "marker"
+              // "icon-image": "{icon}-15",
+              // "icon-allow-overlap": true
+
+          }
+
+      });
+      });
+      map.on('click', 'places', function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+
+        var description = e.features[0].properties.description;
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        var popup = new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML(description)
+            .addTo(map);
+    });
+      map.on('mouseenter', 'places', function () {
+          map.getCanvas().style.cursor = 'pointer';
+      });
+
+      // Change it back to a pointer when it leaves.
+      map.on('mouseleave', 'places', function () {
+          map.getCanvas().style.cursor = '';
+      });
+    });
+
+    
+
+    // code from the next step will go here
+    </script>
+
+
+</div>
+</div>
+</div>
+
+<!--<ul class="alerts"  data-ng-show="flashMessages.length > 0">
+<li class="alert alert-success alert-dismissable" data-ng-repeat="message in flashMessages">
+<button class="close" data-ng-click="close($index)" aria-hidden="true" data-dismiss="alert" type="button">×</button>
+Tank You For Contacting Us.
+</li>
+</ul>-->
+<!--=============================================Start Validation===========================================-->
+
+
+
+<footer>
+  <!--<select  class="selectpicker show-tick form-control">
+  <option>cow</option>
+  <option>ASD</option>
+  <option selected>Bla</option>
+  <option>Ble</option>
+</optgroup>
+</select>-->
+</footer>
+<style>
+.highlight
+{
+  background-color:red;
+  cursor:pointer;
+}
+#menu_outer ul li span
+{
+  cursor:pointer;
+}
+</style>
+<!--Code for get browser name-->
+<script>
+var nVer = navigator.appVersion;
+var nAgt = navigator.userAgent;
+var browserName  = navigator.appName;
+var fullVersion  = ''+parseFloat(navigator.appVersion);
+var majorVersion = parseInt(navigator.appVersion,10);
+var nameOffset,verOffset,ix;
+
+// In Opera 15+, the true version is after "OPR/"
+if ((verOffset=nAgt.indexOf("OPR/"))!=-1) {
+  browserName = "Opera";
+  fullVersion = nAgt.substring(verOffset+4);
+}
+// In older Opera, the true version is after "Opera" or after "Version"
+else if ((verOffset=nAgt.indexOf("Opera"))!=-1) {
+  browserName = "Opera";
+  fullVersion = nAgt.substring(verOffset+6);
+  if ((verOffset=nAgt.indexOf("Version"))!=-1)
+  fullVersion = nAgt.substring(verOffset+8);
+}
+// In MSIE, the true version is after "MSIE" in userAgent
+else if ((verOffset=nAgt.indexOf("MSIE"))!=-1) {
+  browserName = "Microsoft Internet Explorer";
+  fullVersion = nAgt.substring(verOffset+5);
+}
+// In Chrome, the true version is after "Chrome"
+else if ((verOffset=nAgt.indexOf("Chrome"))!=-1) {
+  browserName = "Chrome";
+  fullVersion = nAgt.substring(verOffset+7);
+}
+// In Safari, the true version is after "Safari" or after "Version"
+else if ((verOffset=nAgt.indexOf("Safari"))!=-1) {
+  browserName = "Safari";
+  fullVersion = nAgt.substring(verOffset+7);
+  if ((verOffset=nAgt.indexOf("Version"))!=-1)
+  fullVersion = nAgt.substring(verOffset+8);
+}
+// In Firefox, the true version is after "Firefox"
+else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
+  browserName = "Firefox";
+  fullVersion = nAgt.substring(verOffset+8);
+}
+// In most other browsers, "name/version" is at the end of userAgent
+else if ( (nameOffset=nAgt.lastIndexOf(' ')+1) <
+(verOffset=nAgt.lastIndexOf('/')) )
+{
+  browserName = nAgt.substring(nameOffset,verOffset);
+  fullVersion = nAgt.substring(verOffset+1);
+  if (browserName.toLowerCase()==browserName.toUpperCase()) {
+    browserName = navigator.appName;
+  }
+}
+// trim the fullVersion string at semicolon/space if present
+if ((ix=fullVersion.indexOf(";"))!=-1)
+fullVersion=fullVersion.substring(0,ix);
+if ((ix=fullVersion.indexOf(" "))!=-1)
+fullVersion=fullVersion.substring(0,ix);
+
+majorVersion = parseInt(''+fullVersion,10);
+if (isNaN(majorVersion)) {
+  fullVersion  = ''+parseFloat(navigator.appVersion);
+  majorVersion = parseInt(navigator.appVersion,10);
+}
+//alert(browserName);
+if(browserName =='Opera')
+{ $('#contact section.hero .emblem .emblem-inner').css('width',"35%");
+}
+window_height=$(window).height();
+window_width=$(window).width();
+//alert(window_width);
+//alert(window_height);
+//alert(browserName);
+if(window_width <= 768) {
+  $('.logo_left').css('display','none !important');
+  $('#header').css('display','none !important');
+  // $('.hamburger').css('display','block !important');
+  $('.nldiv .viewport img').css('width','100%');
+  $('#contact section.hero .emblem .nldiv').css('margin','0 auto');
+
+}
+if(window_width >= 768 && window_width <= 1200) {
+  $('.logo_left').css('display','none !important');
+  $('#header').css('display','none !important');
+  // $('.hamburger').css('display','block !important');
+  // $('.nldiv .viewport img').css('width','34%');
+  $('#contact section.hero .emblem .nldiv').css('margin','0 auto');
+
+}
+if(window_width == 600 && window_height == 1024){
+  $('.logo_left').css('display','none !important');
+  $('#header').css('display','none !important');
+  // $('.hamburger').css('display','block !important');
+  $('.nldiv .viewport img').css('width','100%');
+  $('#contact section.hero .emblem .nldiv').css('margin','0 auto');
+}
+if(window_width == 768 && window_height == 1024){//alert('768');
+$('.logo_left').css('display','none !important');
+$('#header').css('display','none !important');
+// $('.hamburger').css('display','block !important');
+$('.nldiv .viewport img').css('width','100%');
+$('#contact section.hero .emblem .nldiv').css('margin','0 auto');
+}
+if(window_width == 748 && window_height == 1024){
+  $('.logo_left').css('display','none');
+  $('#header').css('display','none');
+  // $('.hamburger').css('display','block');
+  $('.nldiv .viewport img').css('width','100%');
+  $('#contact section.hero .emblem .nldiv').css('margin','0 auto');
+}
+if(browserName =='Safari')
+{
+  $('.headerli').css('line-height','1px');
+}
+</script>
+<script>
+$(document).ready(function(e) {
+  if(browserName=='Netscape')
+  {
+    $("#require_service,#budget,#deadline").css("width","95%");
+    $("#require_service,#budget,#deadline").css("margin","15px 15px");
+    $("#require_service,#budget,#deadline").css("height","auto");
+    $("#require_service,#budget,#deadline").css("padding","0px");
+  }
+});
+$(document).ready(function()
+{
+  var mq = window.matchMedia( "(min-width: 768px)" );
+  //if(jQuery("body").scrollTop()==0)
+  $(window).on("scroll", function()
+  {
+
+
+
+
+
+    if (mq.matches) {
+      $('#header').css('display','block');
+      $('.logo_left').css('display','block');
+      // $('.hamburger').css('display','none');
+    }
+      if(jQuery(document).scrollTop()==0)
+      {
+
+
+        $('.logo_left').css('display','none');
+        $('#header').css('display','none');
+        // $('.hamburger').css('display','block');
+      }
+    });
+  });
+  function go_on(link_data)
+  {
+    window.location=link_data;
+  }
+  </script>
+  <style>
+
+  </style>
+  <script>
+  window_height=$(window).height();
+  window_width=$(window).width();
+  if(window_width == 1007){
+    //alert($('.nldiv .viewport img').css('width'));
+    $('.nldiv .viewport img').css('width','34%');
+
+  }
+  if(window_width == 1024 && window_height == 600 ){//alert('test');
+  //alert($('.nldiv .viewport img').css('width'));
+  $('.nldiv .viewport img').css('width','34%');
+
+}
+if(window_width == 1024 && window_height == 748 ){//alert('test');
+//alert($('.nldiv .viewport img').css('width'));
+$('.nldiv .viewport img').css('width','34%');
+
+}
+if(window_width == 1024 && window_height == 768) {
+  //alert($('.nldiv .viewport img').css('width'));
+  $('.nldiv .viewport img').css('width','34%');
+
+}
+if(window_width == 320){
+  $('#contact section.hero .emblem .nldiv').css('width','100%');
+  $('#contact section.hero .emblem .nldiv').css('margin','0 auto');
+}
+if(window_width == 600 && window_height == 1024){
+  $('.logo_left').css('display','none !important');
+  $('#header').css('display','none !important');
+  // $('.hamburger').css('display','block !important');
+  $('.nldiv .viewport img').css('width','100%');
+  $('#contact section.hero .emblem .nldiv').css('margin','0 auto');
+}
+if(window_width == 768 && window_height == 1024){
+  $('.logo_left').css('display','none !important');
+  $('#header').css('display','none !important');
+  // $('.hamburger').css('display','block !important');
+  $('.nldiv .viewport img').css('width','100%');
+  $('#contact section.hero .emblem .nldiv').css('margin','0 auto');
+}
+if(window_width == 748 && window_height == 1024){
+  $('.logo_left').css('display','none !important');
+  $('#header').css('display','none !important');
+  // $('.hamburger').css('display','block !important');
+  $('.nldiv .viewport img').css('width','100%');
+  $('#contact section.hero .emblem .nldiv').css('margin','0 auto');
+}
+$( document ).ready(function() {
+  $('#nl').addClass('active');
+});
+</script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/jquery.fatNav.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- <div class="logo_left">
+  <span onClick="go_on('./')">
+    <img src="images/top_logo_sticky.png" alt="top-logo-sticky" style="width: 175px;">
+  </span>
+</div> -->
+<div class="language_switcher custom_switcher">
+  <span  id="nl" class="nl_switcher active">NL </span><span class="vertical_line"> |</span>
+  <a href="../contact" id="en" class="en_switcher">EN </a>
+</div>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72356531-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+<!-- Google Code for Form Filled Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 852722762;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "vm6mCO2rkHEQyojOlgM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/852722762/?label=vm6mCO2rkHEQyojOlgM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+</body>
+
+</html>

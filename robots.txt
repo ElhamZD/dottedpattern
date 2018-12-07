@@ -1,0 +1,6 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://www.biglyft.com/sitemap.xml
+Sitemap: http://www.biglyft.com/urllist.txt
+Sitemap: http://www.biglyft.com/sitemap.html

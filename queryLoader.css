@@ -1,0 +1,246 @@
+.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:500px;
+	padding-top:150px;
+	width:100%;
+	
+}
+.Qubackimage{
+	background:url(loaderPrevious.png) no-repeat;
+	height: 315px;
+	}
+.QLoader {
+	
+	height: 310px;
+	width:0px;
+	position:relative;
+	/*background:#cccccc;*/
+	
+}
+.QLimage{
+	z-index:999;
+	position:absolute;
+	height: 310px;
+	width:315px;
+	background:url(loader.png) no-repeat;
+	margin:auto;
+	
+	
+	
+	
+	}
+	
+/*====for media query=====*/
+/*=========================*/
+@media (max-width:2560px) {
+	.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:1150px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+@media (max-width:1920px) {
+	.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:800px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+@media (max-width:1680px) {
+	.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:680px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+@media (max-width:1600px) {
+	.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:650px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+@media (max-width:1440px) {
+	.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:590px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+
+@media (max-width:1199px) {
+	.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:430px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+@media (max-width:1100px) {
+	.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:400px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+@media (max-width:1024px) {
+	.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:370px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+@media (max-width:990px) {
+	.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:350px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+@media (max-width:950px) {
+	.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:300px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+@media (max-width:870px) {
+.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:280px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+@media (max-width:800px) {
+.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:230px;
+	padding-top:150px;
+	width:100%;	
+}
+}	
+@media (max-width:768px) {
+.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:200px;
+	padding-top:150px;
+	width:100%;	
+}
+}	
+@media (max-width:685px) {
+.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:180px;
+	padding-top:150px;
+	width:100%;	
+}
+}	
+@media (max-width:600px) {
+.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:150px;
+	padding-top:150px;
+	width:100%;	
+}
+}	
+@media (max-width:568px) {
+.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:120px;
+	padding-top:150px;
+	width:100%;	
+}
+}	
+@media (max-width:480px) {
+.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:80px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+
+@media (max-width:414px) {
+.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:50px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+@media (max-width:384px) {
+.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:34px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+@media (max-width:375px) {
+.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:30px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+@media (max-width:360px) {
+.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:24px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+
+@media (max-width:320px) {
+.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:5px;
+	padding-top:150px;
+	width:100%;	
+}
+}
+
+@media (max-width:240px) {
+.QOverlay {
+	background-color: #000000;
+	z-index: 99999;
+	padding-left:0px;
+	padding-top:150px;
+	width:100%;	
+}
+}

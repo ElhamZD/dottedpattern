@@ -1,0 +1,1 @@
+window.settings = {"google_analytics_enabled": true, "map_enabled": true, "static_url_prefix": "/static/", "particle_slider_enabled": true};

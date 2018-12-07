@@ -1,0 +1,27 @@
+<IfModule mod_rewrite.c>
+
+Options +MultiViews
+RewriteEngine On
+RewriteBase /
+
+# SSL certificate
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.biglyft.com/$1 [R,L]
+
+# Hide .html extension
+## External Redirect
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+RewriteRule ^ %1 [R,NC]
+
+## ## Internal Redirect
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html
+
+RewriteCond %{HTTP_HOST} ^biglyft.com [NC]
+RewriteRule ^(.*)$ https://www.biglyft.com/$1 [L,R=301]
+
+ErrorDocument 404 /index.html
+
+</IfModule>
+

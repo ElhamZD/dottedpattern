@@ -1,0 +1,732 @@
+<!--[if !IE ]> <style> 
+#logo_image{display:none;}
+<![endif]--><!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <title>Web Design Services | Design a Website | eCommerce Development</title>
+     <meta name="description" content="BIGLYFT offers Website Development, Website Design, eCommerce Development,Web Applications or any kind of software for the Web World.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="ecommerce Development, webshop designer, website designer, website developer, wordpress designer,ecommerce website development,web designer in amsterdam,web design company,web development company,Web Development Amsterdam,WordPress Amsterdam">
+
+    <link type="images/favicon" href="images/favicon.ico" rel="shortcut icon" />
+     <link rel="stylesheet" href="css/font-awesome.min.css" media="all">	
+    <!--[if  IE]>
+<link rel="stylesheet" href="css/stylesie.css" media="all" type="text/css">
+<![endif]-->
+    <link rel="stylesheet" href="css/styles.css" media="all">
+    <link rel="stylesheet" href="css/custom.css" media="all">
+    <!--<script type="text/javascript" src="js/analytics.js"></script>
+<script type="text/javascript" src="js/head_scripts.js"></script>-->
+    <!-- <script type="text/javascript" src="js/scripts.js"></script> -->
+    <link rel="stylesheet" href="css/jquery.fatNav.min.css">
+    <!--<script type="text/javascript" src="js/settings.js"></script>-->
+     <script type="text/javascript">
+//userAgent in IE7 WinXP returns: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 2.0.50727)
+//userAgent in IE11 Win7 returns: Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko
+
+if (navigator.userAgent.indexOf('MSIE') != -1)
+ var detectIEregexp = /MSIE (\d+\.\d+);/ //test for MSIE x.x
+else // if no "MSIE" string in userAgent
+ var detectIEregexp = /Trident.*rv[ :]*(\d+\.\d+)/ //test for rv:x.x or rv x.x where Trident string exists
+
+if (detectIEregexp.test(navigator.userAgent)){ //if some form of IE
+ var ieversion=new Number(RegExp.$1) // capture x.x portion and store as a number
+
+if (ieversion>=12)
+ document.write("You're using IE12 or above")
+ else if (ieversion>=11) {
+  var cssId = 'myCss11';  // you could encode the css path itself to generate id..
+if (!document.getElementById(cssId))
+{
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.id   = cssId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'css/styleie11.css';
+    link.media = 'all';
+    head.appendChild(link);
+}
+}
+//else if (ieversion>=10)
+  //document.write("You're using IE10 or above")
+ //else if (ieversion>=9)
+  //document.write("You're using IE9 or above")
+ //else if (ieversion>=8)
+  //document.write("You're using IE8 or above")
+ //else if (ieversion>=7)
+  //document.write("You're using IE7.x")
+ //else if (ieversion>=6)
+ // document.write("You're using IE6.x")
+ //else if (ieversion>=5)
+  //document.write("You're using IE5.x")
+}
+else{
+ //alert("n/a");
+}
+</script>
+	 
+    <link rel="stylesheet" href="queryLoader.css" type="text/css">
+    
+    <!-----end BIGLYFT------>
+    <script type="text/javascript" src="queryLoader.js"></script>
+ <script>
+ 
+$('.QOverlay').css('visibility','hidden');
+  var mq = window.matchMedia( "(min-width: 500px)" );
+       if (!mq.matches) {
+            $('.QOverlay').css('visibility','hidden');
+			}
+	  if (mq.matches) {
+		  window.onload = function() {
+	   $('#logo_image').css('display','none');
+	  $('#logo_image').hide().fadeIn(8000);
+	  };
+      }</script>
+	<style type="text/css">
+    	#menu_outer ul li span
+		{
+			cursor:pointer;	
+		}
+    </style>
+    <body class="loaded" data-ng-app="teamgeek" data-ng-class="{ loaded: appLoaded }" data-ng-strict-di=""></body>
+        <script type="text/javascript" async src="js/ga.js"></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', '']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+            function trackExternal(link, prefix) {
+                try {
+                    if (typeof prefix == "undefined" || prefix == null)
+                        prefix = "";
+                    var href = link.href.replace(/(http)(s)?:\/\/(www\.)?/i, "/outgoing/" + prefix);
+                    _gaq.push(['_trackPageview', href]);
+                } catch (err) {}
+            }
+        </script>
+        <script type="text/javascript" src="js/modernizr-2.5.3.js"></script>
+        <script type="text/javascript">
+            window.MetroJsVersion = '0.9.77';
+        </script>
+        <script type="text/javascript" async src="js/embed.js"></script>
+
+
+        <div id="header">
+            <div class="header custom_header" data-position="fixed" >
+                <style>
+                    .clicked{ 
+                        color: #F05023 !important;
+                    }
+                </style>
+                <ul class="header_ul">
+                    <li>
+                        <span>
+                            <i class="fa fa-phone-square"></i> 06 4410 1988
+                        </span>
+                    </li>
+                </ul>
+                <div class="logo_center">
+                    <span onClick="go_on('/')">
+                        <img src="images/top_logo_sticky.png" alt="top-logo-sticky">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="callbackbtn">
+            <a href="tel:+31 6 4410 1988"><i class="fa fa-phone"></i></a>
+        </div>
+        <div class="mobile_header">  
+        </div>
+
+
+        <!--Start of Zendesk Chat Script-->
+        <script type="text/javascript">
+        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+        _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+        $.src="https://v2.zopim.com/?4ntf2UzC0P663qAShvC1UWapjtIAUkpl";z.t=+new Date;$.
+        type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+        </script>
+        <!--End of Zendesk Chat Script-->
+			
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-72356531-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+    </head>
+
+
+
+
+<script>
+
+	var prev_class=1;
+function abc(a)
+{
+	if(a!=prev_class)
+	{
+	var li_siblings=document.getElementById("tab"+a);
+	var li_prev=document.getElementById("tab"+prev_class);
+	var tab_content=document.getElementById("tab_content"+a);
+	var tab_content_prev=document.getElementById("tab_content"+prev_class);
+	
+	tab_content.className='tab-pane active';
+	tab_content_prev.className='tab-pane';
+	li_prev.className="";
+	li_siblings.className = "active";
+	prev_class=a;
+	}
+}
+</script>
+<body class="loaded" data-ng-app="partha" data-ng-class="{ loaded: appLoaded }" data-ng-strict-di="">
+    <div class="relative_scroll" onscroll="myFunction()">
+        <script>
+		 /*@cc_on
+        if (/^10/.test(@_jscript_version) || ieversion>=10) {
+           var cssId = 'myCss';  // you could encode the css path itself to generate id..
+if (!document.getElementById(cssId))
+{
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.id   = cssId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'css/styleie10.css';
+    link.media = 'all';
+    head.appendChild(link);
+}
+        }
+    @*/
+		//var browserName=navigator.appName; 
+//if (browserName !="Microsoft Internet Explorer" || !(/^10/.test(@_jscript_version)))
+//{}
+QueryLoader.selectorPreload = "body";
+  QueryLoader.init();
+$('.QOverlay').css('visibility','hidden');
+           
+        </script>
+        <div class="fat-nav" >
+        <div class="fat-nav__wrapper" id="menu_outer">
+            <ul>
+            	<!--<li style="background:none;"><a href="index.html"><img src="images/top_logo.png" alt="top-logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="contactus.html">Contact</a></li>-->
+                <li style="background:none;">
+                	<span onClick="go_on('/')">
+                    	<img src="images/top_logo.png" alt="top-logo">
+                    </span>
+                </li>
+                <li><span onClick="go_on('/')">HOME</span></li>
+                <li><span onClick="go_on('work.html')">WORK</span></li>
+                <li><span onClick="go_on('services.html')">SERVICES</span></li>
+              <!--  <li><span onClick="go_on('blog')">BLOG</span></li> -->
+                <li><span onClick="go_on('people.html')">PEOPLE</span></li>
+                <li><span onClick="go_on('contact.html')">CONTACT</span></li>
+            </ul>
+        </div>
+        <div class="social-links">
+        		<div class="all_social_links">
+                    <a class="social-link facebook" target="_blank" href="https://www.facebook.com/BigLyft"></a>
+				<!--	<a class="social-link gplus" target="_blank" href="https://google.com/+Ekubus"></a> -->
+                    <a class="social-link twitter" target="_blank" href="https://twitter.com/BigLyft"></a>
+                    
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>© 2018 BIGLYFT | KvK Amsterdam - 61529761</p>
+            </div>
+    </div>
+    </div>
+
+    <div id="main">
+        <div id="services" data-tg-navbar-container="">
+            <aside>
+                <div data-is-collapsed="true" class="navbar collapsed" data-ng-class="{ 'collapsed': collapsed }">
+                </div>
+            </aside>
+
+            <div id="resizable-container">
+                <section class="hero">
+                    <div class="emblem">
+                   <!-- <div class="viewport_top_logo">
+                                	<a href="./"><img src="images/logo_anitop.png" alt="logo-anitop" id="logo_image"></a>
+                                </div> -->
+                        <div class="nldiv">
+                                                        
+                            <div class="viewport" id="myport">
+                             
+                                <img src="images/website-img.png"  alt="website">
+                               
+                                 
+                            </div>
+                              
+                                   
+         
+                           
+                               
+                       
+                        </div>
+                    </div>
+                </section>
+<script type="text/javascript">
+// document.getElementById('myport').addEventListener('mouseover', function (){
+// $('#myport').css('cursor','pointer');
+ 
+// });
+// document.getElementById('myport').addEventListener('click', function (){
+//  window.location = '/';
+// });
+</script>
+                <section>
+                  <div justified="true" class="service-tabs">
+                      
+                        <div class="tab-content">
+                            <!-- ngRepeat: tab in tabs -->
+                          
+						   <div id="tab_content1" class="tab-pane active" ng-repeat="tab in tabs" ng-class="{active: tab.active}" tab-content-transclude="tab">
+
+                                <div class="container-fluid service">
+                                    <div class="row">
+                                        <div class="col-sm-5 hidden-xs">
+                                            
+											<div class="icon">
+                                                <img src="images/webdesign-icon.png" alt="webdesign-icon" class="img-responsive">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="description">
+												<h1>Website</h1>
+                                                <p>Conception, Creation and Web Design that look good in any device.
+												</p>
+									            <p>Websites and Web Portal are the main platforms for communication in the digital age. That is why we combine cutting-edge technology with innovative design and custom made concepts for our cients. We cover the entire range of services from Consulting to concept and creation to technical implementation & support. We rely on the most powerful tools, especially WordPress Developer, Joomla, Magento Developer, Typo3 as well as various other CMS systems.
+												</p>	  
+												
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								</div> 
+                        </div>
+                    </div>
+                </section>
+				<section id="whattodo" class="whattodo" data-tg-scroll-section="">
+					<div class="container">
+
+                            <div class="col-xs-12">
+								<div class="description">
+									<h1>What we offer</h1>
+								</div>
+								<div class="col-sm-4">
+									
+									<div class="description">
+										<h3>BASIC</h3>
+										<p>Based on ready made theme that you can choose from hundreds of beautiful theme designs. We help you place your Logo, Product Images & Texts to the defined layout of the chosen theme. Our Basic Website package is designed to get your Website online quickly.</p>
+									</div>
+									
+									<div class="myrow">
+										<a class="reamoremoney">From €900</a>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									
+									<div class="description">
+										<h3>ADVANCED</h3>
+										<p>Theme based design that you can choose from hundreds of beautiful themes, which we customize according to your need to give it a personalized look and a better user experience. Our Advanced package makes your Website to stand out in the crowd.</p>
+									</div>
+									
+									<div class="myrow">
+										<a class="reamoremoney">From €2100</a>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									
+									<div class="description">
+										<h3>PREMIUM</h3>
+										<p>We make the Website with fully customized theme or custom design it from scratch with several design drafts. You get a unique and a good mix of high performance, visually appealing Website. We offer six months free support to Premium Websites.</p>
+									</div>
+									
+									<div class="myrow">
+										<a class="reamoremoney">From €3500</a>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<a class="readmymore btn btn-default" href="contact.html">Get a Free Quote</a>
+							</div>
+							<p>&nbsp;</p>
+						</div>
+				
+				</section>
+					
+
+                <section id="showcase" data-tg-scroll-section="">
+                  <div class="container-fluid full">
+                        <div class="row">
+                            <div class="col-xs-12 no-gutter">
+                                <div class="latest-work-bar">
+                                    <h1 class="pull-left">Latest Websites</h1>
+                                    <a href="work.html" class="pull-right"><h1>View More</h1></a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">					
+						    <div class="col-sm-4 no-gutter">
+                                <a data-logo-src="images/acciss_logo.png" data-bg-src="images/acciss-bg.jpg" href="project_acciss.html" data-overlay-src="images/case-study.png" class="project">
+                                    <!-- ngIf: bgSrc -->
+                                    <img src="images/acciss-bg.jpg" alt="acciss-bg" class="background" data-ng-if="bgSrc" data-ng-src="images/acciss-bg.jpg">
+                                    <!-- end ngIf: bgSrc -->
+                                    <!-- ngIf: bgSrc -->
+                                    <img src="images/acciss-bg.jpg" alt="acciss-bg" class="zoom-background" data-ng-if="bgSrc" data-ng-src="images/acciss-bg.jpg" data-ng-show="hoverState == 'zoom'">
+                                    <!-- end ngIf: bgSrc -->
+                                    <div class="content slide-up" data-ng-class="{ 'slide-up': overlaySrc }">
+                                        <img src="images/acciss_logo.png" alt="acciss-logo" class="logo" data-ng-class="{fading: hoverState == 'fading'}" data-ng-src="images/acciss_logo.png">
+                                    </div>
+                                    <!-- ngIf: overlaySrc -->
+                                    <div class="hover-overlay" data-ng-if="overlaySrc">
+                                        <img src="images/case-study.png" alt="case-study-btn" data-ng-src="images/case-study.png">
+                                    </div>
+                                    <!-- end ngIf: overlaySrc -->
+                                </a>
+                            </div>
+							
+							<div class="col-sm-4 no-gutter">
+                                <a data-logo-src="images/packright_logo.png" data-bg-src="images/packright-bg.jpg" href="project_packright.html" data-overlay-src="images/read-more.png" class="project">
+                                    <!-- ngIf: bgSrc -->
+                                    <img src="images/packright-bg.jpg" alt="packright-bg" class="background" data-ng-if="bgSrc" data-ng-src="images/packright-bg.jpg">
+                                    <!-- end ngIf: bgSrc -->
+                                    <!-- ngIf: bgSrc -->
+                                    <img src="images/packright-bg.jpg" alt="packright-bg" class="zoom-background" data-ng-if="bgSrc" data-ng-src="images/packright-bg.jpg" data-ng-show="hoverState == 'zoom'">
+                                    <!-- end ngIf: bgSrc -->
+                                    <div class="content slide-up" data-ng-class="{ 'slide-up': overlaySrc }">
+                                        <img src="images/packright_logo.png" alt="packright_logo" class="logo" data-ng-class="{fading: hoverState == 'fading'}" data-ng-src="images/packright-bg.jpg">
+                                    </div>
+                                    <!-- ngIf: overlaySrc -->
+                                    <div class="hover-overlay" data-ng-if="overlaySrc">
+                                        <img src="images/read-more.png" alt="read-more-btn" data-ng-src="images/read-more.png">
+                                    </div>
+                                    <!-- end ngIf: overlaySrc -->
+                                </a>
+                            </div>
+							
+                            <div class="col-sm-4 no-gutter" id="last_image">
+                                <a data-logo-src="images/get-started.png" data-bg-src="images/black-bg.jpg" data-hover-state="fading" href="contact.html" class="project">
+                                    <!-- ngIf: bgSrc -->
+                                    <img src="images/black-bg.jpg" alt="black-bg" class="background" data-ng-if="bgSrc" data-ng-src="images/black-bg.jpg">
+                                    <!-- end ngIf: bgSrc -->
+                                    <!-- ngIf: bgSrc -->
+                                    <img src="images/black-bg.jpg" alt="black-bg" class="zoom-background ng-hide" data-ng-if="bgSrc" data-ng-src="images/black-bg.jpg" data-ng-show="hoverState == 'zoom'">
+                                    <!-- end ngIf: bgSrc -->
+                                    <div class="content" data-ng-class="{ 'slide-up': overlaySrc }">
+                                        <img src="images/get-started.png" alt="get-started" class="logo fading" data-ng-class="{fading: hoverState == 'fading'}" data-ng-src="images/landing/get-started.png">
+                                    </div>
+                                    <!-- ngIf: overlaySrc -->
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                 </div>
+            </div>
+        </div>
+                
+          <footer>  
+    <!--<div class="asdadadas">
+     <div id="resizable-container">
+                <section class="hero">
+                    <div class="emblem">
+                        <div class="emblem-inner">
+                            <div class="viewport">
+                                <img src="images/emblem_sprite.png">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            </div>-->
+    
+    </footer>
+    <!--**************Code for get brpwser name**************-->
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script>
+	$(document).ready(function(e) {
+       var nVer = navigator.appVersion;
+		var nAgt = navigator.userAgent;
+		var browserName  = navigator.appName;
+		var fullVersion  = ''+parseFloat(navigator.appVersion); 
+		var majorVersion = parseInt(navigator.appVersion,10);
+		var nameOffset,verOffset,ix;
+		
+		// In Opera 15+, the true version is after "OPR/" 
+		if ((verOffset=nAgt.indexOf("OPR/"))!=-1) {
+		 browserName = "Opera";
+		 fullVersion = nAgt.substring(verOffset+4);
+		}
+		// In older Opera, the true version is after "Opera" or after "Version"
+		else if ((verOffset=nAgt.indexOf("Opera"))!=-1) {
+		 browserName = "Opera";
+		 fullVersion = nAgt.substring(verOffset+6);
+		 if ((verOffset=nAgt.indexOf("Version"))!=-1) 
+		   fullVersion = nAgt.substring(verOffset+8);
+		}
+		// In MSIE, the true version is after "MSIE" in userAgent
+		else if ((verOffset=nAgt.indexOf("MSIE"))!=-1) {
+		 browserName = "Microsoft Internet Explorer";
+		 fullVersion = nAgt.substring(verOffset+5);
+		}
+		// In Chrome, the true version is after "Chrome" 
+		else if ((verOffset=nAgt.indexOf("Chrome"))!=-1) {
+		 browserName = "Chrome";
+		 fullVersion = nAgt.substring(verOffset+7);
+		}
+		// In Safari, the true version is after "Safari" or after "Version" 
+		else if ((verOffset=nAgt.indexOf("Safari"))!=-1) {
+		 browserName = "Safari";
+		 fullVersion = nAgt.substring(verOffset+7);
+		 if ((verOffset=nAgt.indexOf("Version"))!=-1) 
+		   fullVersion = nAgt.substring(verOffset+8);
+		}
+		// In Firefox, the true version is after "Firefox" 
+		else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
+		 browserName = "Firefox";
+		 fullVersion = nAgt.substring(verOffset+8);
+		}
+		// In most other browsers, "name/version" is at the end of userAgent 
+		else if ( (nameOffset=nAgt.lastIndexOf(' ')+1) < 
+				  (verOffset=nAgt.lastIndexOf('/')) ) 
+		{
+		 browserName = nAgt.substring(nameOffset,verOffset);
+		 fullVersion = nAgt.substring(verOffset+1);
+		 if (browserName.toLowerCase()==browserName.toUpperCase()) {
+		  browserName = navigator.appName;
+		 }
+		}
+		// trim the fullVersion string at semicolon/space if present
+		if ((ix=fullVersion.indexOf(";"))!=-1)
+		   fullVersion=fullVersion.substring(0,ix);
+		if ((ix=fullVersion.indexOf(" "))!=-1)
+		   fullVersion=fullVersion.substring(0,ix);
+		
+		majorVersion = parseInt(''+fullVersion,10);
+		if (isNaN(majorVersion)) {
+		 fullVersion  = ''+parseFloat(navigator.appVersion); 
+		 majorVersion = parseInt(navigator.appVersion,10);
+		}
+		//alert(browserName); 
+		if(browserName =='Opera')
+		{ $('#services section.hero .emblem .nldiv img').css('width',"35%");
+ }
+        window_height=$(window).height();
+	   window_width=$(window).width();
+        //alert(window_width);
+        //alert(window_height);
+        //alert(browserName);
+        if(window_width <= 768) {
+        $('.logo_left').css('display','none !important');	
+        		  $('#header').css('display','none !important');	
+        		  // $('.hamburger').css('display','block !important');
+                          $('.nldiv .viewport img').css('width','100%');
+                          $('#services section.hero .emblem .nldiv').css('margin','0 auto');
+
+        }
+        if(window_width >= 768 && window_width <= 1200) {
+                          $('.logo_left').css('display','none !important');	
+        		  $('#header').css('display','none !important');	
+        		  // $('.hamburger').css('display','block !important');
+                          // $('.nldiv .viewport img').css('width','34%');
+                          $('#services section.hero .emblem .nldiv').css('margin','0 auto');
+
+        }
+        if(window_width == 600 && window_height == 1024){ 
+                          $('.logo_left').css('display','none !important');	
+        		  $('#header').css('display','none !important');	
+        		  // $('.hamburger').css('display','block !important');
+                          $('.nldiv .viewport img').css('width','100%');
+                          $('#services section.hero .emblem .nldiv').css('margin','0 auto');
+        }
+         if(window_width == 768 && window_height == 1024){//alert('768');
+                          $('.logo_left').css('display','none !important');	
+        		  $('#header').css('display','none !important');	
+        		  // $('.hamburger').css('display','block !important');
+         $('.nldiv .viewport img').css('width','100%');
+         $('#services section.hero .emblem .nldiv').css('margin','0 auto');
+        }
+         if(window_width == 748 && window_height == 1024){
+          $('.logo_left').css('display','none');	
+        		  $('#header').css('display','none');	
+        		  // $('.hamburger').css('display','block');
+         $('.nldiv .viewport img').css('width','100%');
+         $('#services section.hero .emblem .nldiv').css('margin','0 auto');
+        }
+	// if(browserName =='Safari'){     
+    //        $('.headerli').css('line-height','1px');
+	// 		//alert('test');
+	// 		$('.slide-up').css('top','-110px');
+	// 		$( ".project" ).hover(
+	// 		  function() 
+	// 		  {
+	// 			//alert('one');
+	// 			$(".hover-overlay").hide();
+	// 			$(this).find(".slide-up").hide();				
+	// 			$(this).find(".hover-overlay").show();				
+	// 			$(this).find(".hover-overlay").css("top","-110px");				
+	// 		  },function() 
+	// 		  {
+	// 			//alert('one');
+	// 			$(".hover-overlay").hide();
+	// 			$(".slide-up").show();
+	// 		  }
+	// 		);
+	// 	$("#last_image .content img").css('width','100%');
+	// 	$("#last_image .content img").css('height','65%');
+ //    }
+});
+</script>
+    <script type="text/javascript">
+	$(document).ready(function() 
+	 {
+		var mq = window.matchMedia( "(min-width: 768px)" );
+	 	//if(jQuery("body").scrollTop()==0)
+		$(window).on("scroll", function() 
+		{
+			
+      
+	 
+	
+	  
+		if (mq.matches) {	  
+		  $('#header').css('display','block');	
+		   $('.logo_left').css('display','block');
+		  // $('.hamburger').css('display','none');
+
+        }
+		  if(jQuery(document).scrollTop()==0)
+			{
+				
+				
+    $('.logo_left').css('display','none');	
+		  $('#header').css('display','none');	
+		  // $('.hamburger').css('display','block');
+			}
+	 	});
+	 });      
+		function go_on(link_data)
+		{
+			window.location=link_data;
+		}
+	</script>
+     <style>
+   
+          </style>
+		  <script>
+   
+   $( document ).ready(function() {
+    $('#nl').addClass('active');
+    });
+        window_height=$(window).height();
+	window_width=$(window).width();
+//alert(window_width);
+//alert(window_height);
+     if(window_width == 1007){//alert('test');
+                    //alert($('.nldiv .viewport img').css('width'));
+                   $('.nldiv .viewport img').css('width','34%');
+
+                              }
+        if(window_width == 1024 && window_height == 600 ){//alert('test');
+                    //alert($('.nldiv .viewport img').css('width'));
+                   $('.nldiv .viewport img').css('width','34%');
+
+                              }
+ if(window_width == 1024 && window_height == 748 ){//alert('test');
+                    //alert($('.nldiv .viewport img').css('width'));
+                   $('.nldiv .viewport img').css('width','34%');
+
+                              }
+ if(window_width == 1024 && window_height == 768) {
+                    //alert($('.nldiv .viewport img').css('width'));
+                   $('.nldiv .viewport img').css('width','34%');
+
+                              }
+                              
+ if(window_width == 320){
+ $('#services section.hero .emblem .nldiv').css('width','100% !important');
+ $('#services section.hero .emblem .nldiv').css('margin','0 auto');
+}
+ if(window_width == 600 && window_height == 1024){ 
+                  $('.logo_left').css('display','none !important');	
+		  $('#header').css('display','none !important');	
+		  // $('.hamburger').css('display','block !important');
+                  $('.nldiv .viewport img').css('width','100%');
+                  $('#services section.hero .emblem .nldiv').css('margin','0 auto');
+}
+ if(window_width == 768 && window_height == 1024){//alert('768 wala');
+  $('.logo_left').css('display','none !important');	
+		  $('#header').css('display','none !important');	
+		  // $('.hamburger').css('display','block !important');
+ $('.nldiv .viewport img').css('width','100%');
+ $('#services section.hero .emblem .nldiv').css('margin','0 auto');
+}
+ if(window_width == 748 && window_height == 1024){
+  $('.logo_left').css('display','none');	
+		  $('#header').css('display','none');	
+		  // $('.hamburger').css('display','block');
+ $('.nldiv .viewport img').css('width','100%');
+ $('#services section.hero .emblem .nldiv').css('margin','0 auto');
+}
+   </script> 
+    <!--**************Code for get brpwser name**************-->
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/jquery.fatNav.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	<!-- <div class="logo_left">
+        <span onClick="go_on('./')">
+        	<img src="images/top_logo_sticky.png" alt="top-logo-sticky" style="width: 175px;">
+        </span>
+    </div>  -->
+   <div class="language_switcher custom_switcher">
+        <span onClick="go_on('nl')" id="nl" class="en_switcher">EN </span><span class="vertical_line"> |</span>
+        <a href="../nl/website" id="en" class="nl_switcher">NL </a>
+    </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72356531-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>	
+
+</html>
