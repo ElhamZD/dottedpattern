@@ -10224,7 +10224,7 @@ section#clients .stat:hover .overlay {
 #services .service-tabs .service {
     clear: both;
     overflow: hidden;
-    background: white
+    /*background: white*/
 }
 
 #services .service-tabs .service .icon {
@@ -10258,7 +10258,6 @@ section#clients .stat:hover .overlay {
 }
 
 #services .service-tabs .tab-content .tab-pane {
-    background-color: #222;
     opacity: 0;
     height: 0;
     display: block;

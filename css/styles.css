@@ -4453,7 +4453,8 @@ text-rendering: auto;}
         @-webkit-keyframes peopleemblem{100%{left:-6900%}}
         @-moz-keyframes peopleemblem{100%{left:-6900%}}
         @-o-keyframes peopleemblem{100%{left:-6900%}}@keyframes peopleemblem{100%{left:-6900%}}@-webkit-keyframes contactemblem{100%{left:-6900%}}@-moz-keyframes contactemblem{100%{left:-6900%}}@-o-keyframes contactemblem{100%{left:-6900%}}@keyframes contactemblem{100%{left:-6900%}}lesshat-selector{-lh-property:0}@-webkit-keyframes servicesemblem{100%{left:-6700%}}@-moz-keyframes servicesemblem{100%{left:-6700%}}@-o-keyframes servicesemblem{100%{left:-6700%}}@keyframes servicesemblem{100%{left:-6700%}}
-        body{overflow:hidden;/*background-color:#171717*/;font-family:'montserrat-hairline-webfont';font-size:180%;color:#ccc}body.loaded{overflow:auto}body.loaded #people .emblem .emblem-inner .viewport images{-webkit-animation:peopleemblem 3000ms 0ms steps(69) 1 forwards;-moz-animation:peopleemblem 3000ms 0ms steps(69) 1 forwards;-o-animation:peopleemblem 3000ms 0ms steps(69) 1 forwards;animation:peopleemblem 3000ms 0ms steps(69) 1 forwards}body.loaded #contact .emblem .emblem-inner .viewport images{-webkit-animation:contactemblem 3000ms 0ms steps(69) 1 forwards;-moz-animation:contactemblem 3000ms 0ms steps(69) 1 forwards;-o-animation:contactemblem 3000ms 0ms steps(69) 1 forwards;animation:contactemblem 3000ms 0ms steps(69) 1 forwards}body.loaded #services .emblem .emblem-inner .viewport images{-webkit-animation:servicesemblem 3000ms 0ms steps(67) 1 forwards;-moz-animation:servicesemblem 3000ms 0ms steps(67) 1 forwards;-o-animation:servicesemblem 3000ms 0ms steps(67) 1 forwards;animation:servicesemblem 3000ms 0ms steps(67) 1 forwards}h1,h2,h3,h4{font-family:montserrat}h1{text-align:center;font-size:170%}images{image-rendering:optimizeQuality;-ms-interpolation-mode:bicubic}images.full{width:100%}section{/*background: #212121 none repeat scroll 0 0;*/color:#ccc;text-align:center;font-weight:300}section h1{text-transform:uppercase}.alerts .alert{background-color:#111;padding: 23px 23px 19px;width: 91%;}.images-responsive{display:inline-block}.carousel-control{display:none}.scroll-icon{/*background:url(../images/scroll.png) no-repeat center center transparent;*/background:url(../images/scroll.png) no-repeat 49% 66%;display:block;width:100%;text-align:center;height:47px;margin:20px 0}section#landing{background:url("../images/background.jpg") no-repeat 0 0 #000;background-size:cover;overflow:hidden;position:relative}section#landing #particle-slider{margin:0 auto;text-align:center;height:100%;width: 100%;
+        body{overflow:hidden;/*background-color:#171717*/;font-family:'montserrat-hairline-webfont';font-size:180%;color:#ccc}body.loaded{overflow:auto}body.loaded #people .emblem .emblem-inner .viewport images{-webkit-animation:peopleemblem 3000ms 0ms steps(69) 1 forwards;-moz-animation:peopleemblem 3000ms 0ms steps(69) 1 forwards;-o-animation:peopleemblem 3000ms 0ms steps(69) 1 forwards;animation:peopleemblem 3000ms 0ms steps(69) 1 forwards}body.loaded #contact .emblem .emblem-inner .viewport images{-webkit-animation:contactemblem 3000ms 0ms steps(69) 1 forwards;-moz-animation:contactemblem 3000ms 0ms steps(69) 1 forwards;-o-animation:contactemblem 3000ms 0ms steps(69) 1 forwards;animation:contactemblem 3000ms 0ms steps(69) 1 forwards}body.loaded #services .emblem .emblem-inner .viewport images{-webkit-animation:servicesemblem 3000ms 0ms steps(67) 1 forwards;-moz-animation:servicesemblem 3000ms 0ms steps(67) 1 forwards;-o-animation:servicesemblem 3000ms 0ms steps(67) 1 forwards;animation:servicesemblem 3000ms 0ms steps(67) 1 forwards}h1,h2,h3,h4{font-family:montserrat}h1{text-align:center;font-size:170%}images{image-rendering:optimizeQuality;-ms-interpolation-mode:bicubic}images.full{width:100%}
+        section{/*background: #212121 none repeat scroll 0 0;*/color:#ccc;text-align:center;font-weight:300}section h1{text-transform:uppercase}.alerts .alert{background-color:#111;padding: 23px 23px 19px;width: 91%;}.images-responsive{display:inline-block}.carousel-control{display:none}.scroll-icon{/*background:url(../images/scroll.png) no-repeat center center transparent;*/background:url(../images/scroll.png) no-repeat 49% 66%;display:block;width:100%;text-align:center;height:47px;margin:20px 0}section#landing{background:url("../images/background.jpg") no-repeat 0 0 #000;background-size:cover;overflow:hidden;position:relative}section#landing #particle-slider{margin:0 auto;text-align:center;height:100%;width: 100%;
          height:630px;
 
      }
@@ -4780,9 +4781,7 @@ text-rendering: auto;}
 #contact section {
     position:relative;
     overflow:hidden;
-    /*change color to white*/
-    /*background-color:#171717;*/
-    background-color:white;
+    /*background-color:white;*/
     padding:30px 15px; 0
 }
 #contact section.hero {
@@ -4846,7 +4845,7 @@ body.loaded #services .emblem .emblem-inner .viewport img {
 #services section {
     position:relative;
     overflow:auto;
-    background-color:#171717
+   /* background-color:#171717*/
 }
 .project .hover-overlay img {
     height: 100%;
@@ -4901,7 +4900,7 @@ body.loaded #services .emblem .emblem-inner .viewport img {
     overflow:hidden;
 }
 #services .service-tabs .tab-content .tab-pane {
-    background-color:white;
+   /* background-color:white;*/
     opacity:0;
     height:0;
     display:block;
@@ -5032,7 +5031,7 @@ body.loaded #services .emblem .emblem-inner .viewport img {
 }
 .case-study .desktop-preview {
     overflow:visible;
-    background:white;
+    /*background:white;*/
     color:black;
 }
 .case-study .desktop-preview .content {
